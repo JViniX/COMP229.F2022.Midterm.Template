@@ -12,17 +12,17 @@
                         name="id"
                         value="<%= todo._id %>"
                     >
-                    <label for="todoTextField">Task</label>
+                    <label for="taskTextField">Task</label>
                     <input type="text" class="form-control"
                         id="taskTextField"
-                        placeholder="Enter the Todo Task"
+                        placeholder="Enter the To-Do Task"
                         name="task" 
                         value="<%= todo.task %>"
                         required>
                 </div>              
 
                 <div class="form-group">
-                    <label for="modelTextField">Description</label>
+                    <label for="descriptionTextField">Description</label>
                     <input type="text" class="form-control"
                         id="descriptionTextField"
                         placeholder="Enter the description"
@@ -32,13 +32,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="seatsTextField">Complete</label>
+                    <label for="completeTextField">Complete</label>
                     <input type="checkbox"
-                    class="form-control"
+                    class="form-check-input"
                     id="completeTextField"
                     name="complete" 
-                    value="<%= todo.complete %>"
-                    required>
+                    value=<%= todo.complete %>
+                    <%= todo.complete == true ? "checked" : "" %>
+                    >
                 </div>
 
                 <br/>

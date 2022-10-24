@@ -5,7 +5,7 @@
 
 console.log('app script is working.');
 
-if(getTitle == "Todo List")
+if(getTitle == "To-Do List")
 {
     let deleteButtons = document.querySelectorAll('.btn-danger');
         

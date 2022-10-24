@@ -6,7 +6,7 @@ let todoModel = mongoose.Schema(
     {
         task: String,
         description: String,
-        complete: Boolean        
+        complete: { type: Boolean, default: false }        
     },
     {
         collection: "todo"
